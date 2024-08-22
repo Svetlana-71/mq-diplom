@@ -11,10 +11,18 @@
         <div class="wrp">
             <div class="header-line">
                 <div class="header-logo">
-                    <img class="logo-icon" src="https://raw.githubusercontent.com/netology-code/html-2-diploma/49254f5a99cc931a884ff9396cab1b1495830519/sources/images/noemi-logo.svg" alt="noemi-logo" />
+                    <a href="#0"><img class="logo-icon" src="https://raw.githubusercontent.com/netology-code/html-2-diploma/49254f5a99cc931a884ff9396cab1b1495830519/sources/images/noemi-logo.svg" alt="noemi-logo"></a>
                 </div>
                 
                 <nav class="header-nav">
+                    <div class="burger-menu">
+                        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                        <label for="burger-checkbox" class="burger"><svg id="Layer_1" viewBox="0 0 80 80" xmlns="../svg/menu_ecy7p8nq0tsj.svg" data-name="Layer 1"><g fill="rgb(0,0,0)">
+                            <path d="m13 16.97h54v10h-54z" fill="#ffffff"></path>
+                            <path d="m13 35.97h54v10h-54z" fill="#ffffff"></path>
+                            <path d="m13 53.97h54v10h-54z" fill="#ffffff"></path></g></svg>
+                        </label>
+                    </div>
                     <ul class="nav-items">
                         <li class="nav-item"><a href="#0">главная</a></li>
                         <li class="nav-item"><a href="#0">посты</a></li>
@@ -33,10 +41,7 @@
     <section class="trends">
         <h2 class="shop-title h2-title">сейчас в тренде</h2>
         <div class="trend-items">
-            <article class="trend-item">
-                <div class="trend-img">
-                    <img src="./images/trend1.jpg" alt="сад">                     
-                </div>
+            <article class="trend-item trend-img1">
                 <div class="trend-item-content">
                     <ul class="post-list-links">
                         <li class="post-list-link"><a href="#0">lifestyle</a></li>
@@ -46,10 +51,8 @@
                 </div>                                     
             </article>
 
-            <article class="trend-item">
-                <div class="trend-img">
-                    <img src="./images/trend2.jpg" alt="сыр">                      
-                </div>
+            <article class="trend-item trend-img2">
+                
                 <div class="trend-item-content">
                     <ul class="post-list-links">
                         <li class="post-list-link"><a href="#0">food</a></li>
@@ -58,10 +61,8 @@
                 </div>                     
             </article>
 
-            <article class="trend-item">
-                <div class="trend-img">
-                    <img src="./images/trend3.jpg" alt="горы">            
-                </div>
+            <article class="trend-item trend-img3">
+                
                 <div class="trend-item-content">
                     <ul class="post-list-links">
                         <li class="post-list-link"><a href="#0">lifestyle</a></li>
@@ -71,10 +72,8 @@
                 </div>                     
             </article>
 
-            <article class="trend-item">
-                <div class="trend-img">
-                    <img src="./images/trend4.jpg" alt="лимоны">                       
-                </div>
+            <article class="trend-item  trend-img4">
+                
                 <div class="trend-item-content">
                     <ul class="post-list-links">
                         <li class="post-list-link"><a href="#0">lifestyle</a></li>
@@ -101,7 +100,7 @@
                     <site class="autor-name">Неизвестный автор</site>
                     </div>
                     <div class="post-text">
-                    <p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</p>
+                        <p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</p>  
                     </div>
                 </div>
             </article>
@@ -119,8 +118,8 @@
                     <site class="autor-name">Неизвестный автор</site>
                     </div>
                     <div class="post-text">
-                    <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
-                    </div>
+                        <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+                   </div>
                 </div>
             </article>
         
@@ -137,8 +136,8 @@
                     <site class="autor-name">Неизвестный автор</site>
                     </div>
                     <div class="post-text">
-                    <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
-                    <p>Мы составили список лучших летних фестивалей по всему миру.</p>
+                        <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
+                        <p>Мы составили список лучших летних фестивалей по всему миру.</p>
                     </div>
                 </div>
             </article>
@@ -156,7 +155,7 @@
                     <site class="autor-name">Неизвестный автор</site>
                     </div>
                     <div class="post-text">
-                    <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+                        <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
                     </div>
                 </div>
             </article>
@@ -262,19 +261,21 @@
                 </article>
         
                 <form class="search-block" action="" method="post">
-                    <input class="input" type="text" placeholder="Найти...">
-                    <span class="visually-hidden">Введите ключевое слово для поиска...</span>
-                    <button class="search-button" type="submit"></button>
-                    <span class="visually-hidden">Нажмите для поиска...</span>
+                    <label class="leb">
+                        <input class="input" type="text" placeholder="Найти...">                   
+                        <button class="search-button" type="submit"><span class="visually-hidden">Введите ключевое слово для поиска...</span></button>
+                    </label>
+                    
                 </form>
             </section>
         
             <section class="mailings">
                 <h2 class="mailing h2-title">Рассылка</h2>
                 <form class="mailing-block" action="" method="post">
-                    <input class="input" type="email" placeholder="Ваш email-адрес" required>
-                    <span class="visually-hidden">email должен содержать @....</span>
-                    <button class="mailing-button" type="submit">подписаться</button>
+                    <label class="leb">
+                        <input class="input" type="email" placeholder="Ваш email-адрес" required>                   
+                        <button class="mailing-button" type="submit"><span class="visually-hidden">email должен содержать @....</span>подписаться</button>                  
+                    </label>                    
                 </form>
             </section>
       
@@ -295,8 +296,7 @@
             <section class="categories">
                 <h2 class="categori h2-title">темы</h2>
                 <ol class="categori-items">
-                <li class="categori-item"><a href="#0">Красота</a><span class="sup"> 12</span>
-                <li>
+                <li class="categori-item"><a href="#0">Красота</a><span class="sup"> 12</span></li>
                 <li class="categori-item"><a href="#0">Здоровье</a><span class="sup"> 4</span></li>
                 <li class="categori-item"><a href="#0">Образ жизни</a><span class="sup"> 145</span></li>
                 <li class="categori-item"><a href="#0">Музыка</a><span class="sup"> 28</span></li>
@@ -311,9 +311,12 @@
         <h2 class="shop-title h2-title">наши изделия</h2>
         <div class="shop-items">
             <article class="shop-item">
-                <div class="shop-img">
+                <picture class="shop-img">
+                    <source srcset="./images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                    <source srcset="./images/shop-item-tablet1.jpg" media="(max-width: 1200px)">
+                    <source srcset="./images/shop-item-desk1.jpg">
                     <img src="./images/shop-item-desk1.jpg" alt="подушки">
-                </div>
+                </picture>
                 <div class="shop-item-content">
                     <h3 class="shop-item-title">подушки на диван</h3>
                     <p class="shop-item-description">Набор из двух подушек с модными принтами. Видео о 
@@ -329,9 +332,13 @@
             </article>
             
             <article class="shop-item">
-                <div class="shop-img">
-                    <img src="./images/shop-item-desk2.jpg" alt="куклы">
-                </div>
+               
+                <picture class="shop-img">
+                    <source srcset="./images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                    <source srcset="./images/shop-item-tablet2.jpg" media="(max-width: 1200px)">
+                    <source srcset="./images/shop-item-desk2.jpg">
+                    <img src="./images/shop-item-desk2.jpg" alt="рамки">
+                </picture>
                 
                 <div class="shop-item-content">
                     <h3 class="shop-item-title">кукла &laquo;зайчик&raquo;</h3>
@@ -347,9 +354,13 @@
             </article>   
 
             <article class="shop-item">
-                <div class="shop-img">
+                
+                <picture class="shop-img">
+                    <source srcset="./images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                    <source srcset="./images/shop-item-tablet3.jpg" media="(max-width: 1200px)">
+                    <source srcset="./images/shop-item-desk3.jpg">
                     <img src="./images/shop-item-desk3.jpg" alt="рамки">
-                </div>
+                </picture>
                 
                 <div class="shop-item-content">
                     <h3 class="shop-item-title">шестиугольная рамка</h3>
@@ -369,34 +380,39 @@
 
     <section class="pop-up visually-hidden">
         <div class="pop-up-win">
-            <div class="pop-up-btn"><svg class="pop-up-close" xmlns="./svg/form-x.svg" fill="none" viewBox="0 0 441 441">
+            <button class="pop-up-btn"><span class="visually-hidden">Закрытие</span><svg class="pop-up-close" xmlns="./svg/form-x.svg" fill="none" viewBox="0 0 441 441">
                 <path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/></svg>
-            </div>
+            </button>
             <h2 class="shop-title h2-title">ваш фидбек</h2>
             <form action="" method="post" class="pop-up-form">
                 <div class="form-block">
-                    <label for="enter">Как часто вы заходите на сайт?</label>
-                    <select id="enter" name="enter" class="enter">
+                    <label class="legend" for="enter">Как часто вы заходите на сайт?</label>
+                    <select id="enter" name="enter" class="select">
                         <option value="first">Почти каждый день</option>
                         <option value="second">Редко</option>
                     </select>
                 </div>
 
                 <div class="form-block">
-                    <fieldset>
-                        <legend>Вы подписаны на e-mail рассылку?</legend>
-                        <input type="radio" id="yes" name="yes"/>
-                        <label for="yes" class="yes">Да</label>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Вы подписаны на e-mail рассылку?</legend>
                         
-                        <input type="radio" id="no" name="yes"/>
-                        <label for="no"  class="no">Нет</label>
+                        <label class="radio-btn">
+                            <input type="radio" id="yes" name="yes" checked>
+                            <span>Да</span>
+                        </label>
+                       
+                        <label class="radio-btn">
+                            <input type="radio" id="no" name="yes">
+                            <span>Нет</span>
+                        </label>
                     </fieldset>
                 </div>
 
                 <div class="form-block">
-                    <label for="survey">Расскажите, какой контент вы хотели бы видеть на нашем сайте</label>
-                    <input class="text-field__input" type="text" name="survey" id="survey" placeholder="Может, больше рецептов?">
-                </div>
+                    <label class="legend" for="survey">Расскажите, какой контент вы хотели бы видеть на нашем сайте</label>
+                    <textarea class="text-field__input" type="text" name="survey" id="survey">Может, больше рецептов?</textarea>
+
                 <button class="pop-up-button" type="submit">Отправить</button>
             </form>
         </div>
