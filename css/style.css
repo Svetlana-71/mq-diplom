@@ -820,7 +820,7 @@ input[type="radio"]:checked + span::before {
   text-align: center;
 }
 
-@media(min-width: 767px) and (max-width: 1200px) {
+@media(min-width: 768px) and (max-width: 1200px) {
   .header {
     background-image: url("../images/banner-bg-tablet.jpg"); 
   }
@@ -956,7 +956,7 @@ input[type="radio"]:checked + span::before {
   }
 }
 
-@media(min-width: 767px) and (max-width: 1200px) and (orientation: landscape) {
+@media(min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
   .trend-item {
     box-sizing: border-box;
     width: 24.5%;
